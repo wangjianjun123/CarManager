@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.car.manager.module.common.SettingActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -21,5 +22,76 @@
             app:titleTextAppearance="@style/ToolBar.TitleText" />
 
     </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="驾驶员姓名："
+                android:textSize="@dimen/default_medium_text_size" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textSize="@dimen/default_medium_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号："
+                android:textSize="@dimen/default_medium_text_size" />
+
+            <TextView
+                android:id="@+id/tvCarNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="津A88888"
+                android:textSize="@dimen/default_medium_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号："
+                android:textSize="@dimen/default_medium_text_size" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13804158420"
+                android:textSize="@dimen/default_medium_text_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </LinearLayout>

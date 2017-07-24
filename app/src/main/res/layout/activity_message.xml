@@ -22,4 +22,155 @@
             app:titleTextAppearance="@style/ToolBar.TitleText" />
 
     </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="出发地：" />
+
+            <TextView
+                android:id="@+id/tvStartLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天津"
+                android:textSize="@dimen/default_medium_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="出发时间：" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-08-08"
+                android:textSize="@dimen/default_medium_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="目的地：" />
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京"
+                android:textSize="@dimen/default_medium_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="状态：" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待确认"
+                android:textSize="@dimen/default_medium_text_size" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认出发" />
+
+            <RadioButton
+                android:id="@+id/rbCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消行程" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <CheckBox
+                android:id="@+id/cbConfilct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行程冲突"
+                android:textSize="@dimen/default_medium_text_size" />
+
+            <CheckBox
+                android:id="@+id/cbNostart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆不在出发地"
+                android:textSize="@dimen/default_medium_text_size" />
+
+            <CheckBox
+                android:id="@+id/cbOtherReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其它原因"
+                android:textSize="@dimen/default_medium_text_size" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnCommit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="确认"
+            android:textSize="@dimen/default_medium_text_size" />
+
+    </LinearLayout>
 </LinearLayout>

@@ -3,14 +3,12 @@ package com.car.manager.module.common;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.text.TextUtils;
 import android.util.Log;
 import android.widget.EditText;
 
 import com.car.manager.R;
 import com.car.manager.base.RxBaseActivity;
 import com.car.manager.utils.CommonUtil;
-import com.car.manager.utils.ToastUtil;
 
 import java.io.IOException;
 
@@ -63,20 +61,20 @@ public class LoginActivity extends RxBaseActivity {
         String strCarNo = etCarNo.getText().toString();
         String strPhone = etPhone.getText().toString();
 
-        if (TextUtils.isEmpty(strUserName)) {
-            ToastUtil.ShortToast("驾驶员姓名不能为空");
-            return;
-        }
-        if (TextUtils.isEmpty(strCarNo)) {
-            ToastUtil.ShortToast("车牌号不能为空");
-            return;
-        }
-        if (TextUtils.isEmpty(strPhone)) {
-            ToastUtil.ShortToast("手机号不能为空");
-            return;
-        }
-
-        addUser(strUserName, strCarNo, strPhone);
+//        if (TextUtils.isEmpty(strUserName)) {
+//            ToastUtil.ShortToast("驾驶员姓名不能为空");
+//            return;
+//        }
+//        if (TextUtils.isEmpty(strCarNo)) {
+//            ToastUtil.ShortToast("车牌号不能为空");
+//            return;
+//        }
+//        if (TextUtils.isEmpty(strPhone)) {
+//            ToastUtil.ShortToast("手机号不能为空");
+//            return;
+//        }
+//
+//        addUser(strUserName, strCarNo, strPhone);
 
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();
